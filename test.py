@@ -68,10 +68,6 @@ def process_data(data):
 
 
 
-train=pd.read_csv('Train_data.csv')
-test=pd.read_csv('Test_data.csv')
-
-
 
 
 
