@@ -78,8 +78,8 @@ with open('Naive_Baye.pkl', 'rb') as f:
 
 
 if st.session_state.file:
-     st.info("1= anomaly, 0= normal")
-     col1, col2, = st.columns(2)
+     st.info("Value : 1= anomaly, 0= normal",icon="ℹ️")
+     col1, col2, = st.columns([0.99,0.01])
 
      s= pd.read_csv(st.session_state.file)
      X_train = process_data(s)
@@ -87,4 +87,12 @@ if st.session_state.file:
      with col1:
         st.write(s)
      with col2:
+        
         st.write(BNB_model.predict(X_train))
+
+
+
+
+
+
+
